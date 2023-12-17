@@ -38,7 +38,14 @@ sudo vim /etc/ssh/sshd_config
 # check if it worked after changing in file :
 sudo grep Port /etc/ssh/sshd_config
 ```
-
-
-
+- restart ssh server :
+```
+sudo systemctl restart ssh
+```
+- access my VM from my terminal :
+```shell
+ssh user@localhost -p port_nb #general
+ssh vafleith@localhost -p 4142 #for my own VM
+ssh vafleith@127.0.0.1 -p 4142 #alternative command
+```
   
