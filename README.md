@@ -123,3 +123,30 @@ sudo systemctl start cron
 sudo systemctl restart cron
 ```
 
+### Hostname
+- verify hostname of the machine :
+```
+hostname
+```
+- change hostname :
+```shell
+sudo vim /etc/hostname #change to new_user42
+sudo reboot
+```
+
+## Evaluation
+
+### What is a virtual machine
+
+### Operating System choice
+
+### What is the difference between APT and Aptitude ?
+
+### What is AppArmor ? What is SELinux ?
+
+### How does SSH works?
+
+### What is a firewall and how does it work ?
+
+### 
+
