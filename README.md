@@ -89,6 +89,37 @@ sudo groupadd evaluating
 ```
 - check if the groups have been created :
 ```
+getent group
+```
+- create a new user :
+```
+sudo adduser username
+```
+- add a user to a specific group :
+```
+usermod -aG evaluating username
+```
+- check if user has been added to the group :
+```
 getent group evaluating
+```
+- or more generally, type `groups` to see which groups the user account belongs to
+
+- check if the password rules are working for users :
+```
+sudo chage -l username
+```
+
+### Crontab
+- `monitoring.sh` is saved in `/usr/local/bin`
+- to change rules for crontab :
+```
+sudo crontab -e
+```
+- to start / stop / restart crontab :
+```
+sudo systemctl stop cron
+sudo systemctl start cron
+sudo systemctl restart cron
 ```
 
