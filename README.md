@@ -32,7 +32,7 @@ getent group sudo
 ```
 sudo systemctl status ssh
 ```
-- change port :
+- change Port :
 ```shell
 sudo vim /etc/ssh/sshd_config
 # check if it worked after changing in file :
@@ -48,4 +48,19 @@ ssh user@localhost -p port_nb #general
 ssh vafleith@localhost -p 4142 #for my own VM
 ssh vafleith@127.0.0.1 -p 4142 #alternative command
 ```
-  
+### ufw
+
+- check ufw status :
+```
+sudo ufw status
+```
+
+- add a new Port rule for 8080 :
+```
+sudo ufw allow 8080
+sudo ufw status
+```
+- delete a Port rule :
+```
+sudo ufw delete allow 8080
+```
