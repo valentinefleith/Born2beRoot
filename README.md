@@ -78,3 +78,17 @@ PASS_MAX_DAYS 30
 PASS_MIN_DAYS 2
 PASS_WARN_AGE 7
 ```
+Then type `sudo reboot` to apply changes.
+
+### Create a group / create a new user and assing them to a group
+
+- create a new group :
+```
+sudo groupadd user42
+sudo groupadd evaluating
+```
+- check if the groups have been created :
+```
+getent group evaluating
+```
+
