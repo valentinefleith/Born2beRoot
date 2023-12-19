@@ -155,11 +155,23 @@ Setting up Rocky is quite complex. Debian is more user-friendly and supports man
 - **SELinux** is 
 
 ### How does SSH works?
-
+SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH. SSH provides password or public-key based authentication and encrypts connections between two network endpoints. SSH is widely used by network administrators to manage systems and applications remotely, deliver software patches, or execute commands and move files.
 
 
 ### What is a firewall and how does it work ?
 
+### UFW (Uncomplicated FireWall)
+
+UFW is a interface to modify the firewall of the device without compromising security. You use it to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, can set a specific port for it to work with.
+
 ### What is LVM ?
 Logical Volume Manager – allows us to easily manipulate the partitions or logical volume on a storage device.
+
+### What is Cron ?
+
+Cron or cron job is a command line utility to schedule commands or scripts to happen at specific intervals or a specific time each day. Useful if you want to set your server to restart at a specific time each day.
+
+- `cd /usr/local/bin` – to show monitoring.sh
+- `sudo crontab -u root -e` – to edit the cron job
+- change script to `*/1 * * * * sleep 30s && script path` – to run it every 30 seconds, delete the line to stop the job from running.
 
