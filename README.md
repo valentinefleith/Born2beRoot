@@ -136,9 +136,12 @@ sudo reboot
 
 ## Evaluation
 
-### What is a virtual machine
+### What is a virtual machine ?
+A virtual machine is a program on a computer that works like it is a separate computer inside the main computer. It is a simple way to run more than one operating system on the same computer. A very powerful server can be split into several smaller virtual machines to use its resources better.
 
 ### Operating System choice
+
+Setting up Rocky is quite complex, while Debian is easier thanks to librairies.
 
 ### What is the difference between APT and Aptitude ?
 
