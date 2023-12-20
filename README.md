@@ -150,9 +150,9 @@ Setting up Rocky is quite complex. Debian is more user-friendly and supports man
 - Apt will only do explicitly what it is told to do in the command line
 
 ### What is AppArmor ? What is SELinux ?
-
-- **AppArmor** is a Linux security system that provides Mandatory Access Control (MAC) security. It allows the system admin to restrict the actions that processes can perform. It is included by default with Debian. Run `aa-status` to check if it is running.
-- **SELinux** is 
+AppArmor and SELinux are security systems that provide Mandatory Access Control (MAC) :  refers to a type of access control by which the operating system or database constrains the ability of a subject or initiator to access or generally perform some sort of operation on an object or target. With mandatory access control, this security policy is centrally controlled by a security policy administrator; users do not have the ability to override the policy and, for example, grant access to files that would otherwise be restricted. By contrast, discretionary access control (DAC), which also governs the ability of subjects to access objects, allows users the ability to make policy decisions and/or assign security attributes. 
+- **AppArmor** is included by default with Debian. Run `aa-status` to check if it is running. It is designed to be simpler than SELinux because it uses the same semantics used for DAC.
+- **SELinux**, however, reinvents some concepts and leaves more liberty in security policy choices.
 
 ### How does SSH works?
 SSH or Secure Shell is an authentication mechanism between a client and a host. It uses encryption techniques so that all communication between clients and hosts is done in encrypted form. User on Mac or Linux can use SSH the terminal to work on their server via SSH. SSH provides password or public-key based authentication and encrypts connections between two network endpoints. SSH is widely used by network administrators to manage systems and applications remotely, deliver software patches, or execute commands and move files.
